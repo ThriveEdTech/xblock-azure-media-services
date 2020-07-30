@@ -287,7 +287,7 @@ class AMSXBlock(StudioEditableXBlockMixin, XBlock):
         try:
             embed_url = reverse(
                 'embed_player',
-                kwargs={'usage_key_string': str(self.scope_ids.usage_id).encode('utf-8')}
+                kwargs={'usage_key_string': unicode(self.scope_ids.usage_id).encode('utf-8')}
             )
             embed_url = "{}{}?embedded=true".format(settings.LMS_ROOT_URL, embed_url)
         except NoReverseMatch:
@@ -407,7 +407,7 @@ def embed_player(request, usage_key_string):
     course_key = usage_key.course_key
     with modulestore().bulk_operations(course_key):
         block, _ = get_module_by_usage_id(
-            request, str(course_key), str(usage_key), disable_staff_debug_info=True,
+            request, unicode(course_key), unicode(usage_key), disable_staff_debug_info=True,
         )
 
     if block.share != 'off':
