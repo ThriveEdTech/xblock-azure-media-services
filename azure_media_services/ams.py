@@ -11,7 +11,7 @@ import logging
 
 from django.conf import settings
 from django.core.exceptions import ImproperlyConfigured
-from django.core.urlresolvers import NoReverseMatch, reverse
+from django.urls import NoReverseMatch, reverse
 from django.http import HttpResponseBadRequest
 from edxval.models import Video
 from opaque_keys.edx.keys import UsageKey
