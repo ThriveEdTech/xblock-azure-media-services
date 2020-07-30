@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "description": "Azure Media Player XBlock",
   "dependencies": {
-    "videojs-vtt.js": "0.12.4"
+    "vtt.js": "0.12.4"
   },
   "repository": {
     "type": "git",
