@@ -246,7 +246,7 @@ class AMSXBlock(StudioEditableXBlockMixin, XBlock):
                 from https://aka.ms/ampchangelog . This allows us to run a test
                 pass prior to ingesting later versions.
         '''
-        fragment.add_javascript(loader.load_unicode('node_modules/vtt.js/lib/vttcue.js'))
+        fragment.add_javascript(loader.load_unicode('static/js/vttcue.js'))
 
         fragment.add_css_url('//amp.azure.net/libs/amp/2.1.5/skins/amp-default/azuremediaplayer.min.css')
         fragment.add_javascript_url('//amp.azure.net/libs/amp/2.1.5/azuremediaplayer.min.js')
