@@ -34,7 +34,7 @@ setup(
     dependency_links=[
         # At the moment of writing PyPI hosts outdated version of xblock-utils, hence git
         # Replace dependency links with numbered versions when it's released on PyPI
-        'git+https://github.com/edx/xblock-utils.git@v1.0.5#egg=xblock-utils==1.0.5',
+        'git+https://github.com/edx/xblock-utils.git@v2.1.1#egg=xblock-utils==2.1.1',
     ],
     install_requires=[
         'PyJWT',
@@ -42,7 +42,7 @@ setup(
         'mako',
         'requests>=2.9.1,<3.0.0',
         'XBlock>=0.4.10,<2.0.0',
-        'xblock-utils>=1.0.2,<=1.0.5',
+        'xblock-utils>=1.0.2,<=2.1.1',
     ],
     entry_points={
         'xblock.v1': [
